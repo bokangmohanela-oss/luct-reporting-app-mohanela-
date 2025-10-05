@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Full-stack reporting web app built with React and Node.js.",
   "main": "index.js",
-  "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build"
+"scripts": {
+  "start": "cd backend && npm start",
+  "build": "cd frontend && npm install && npm run build"
 }
 ,
   "engines": {
