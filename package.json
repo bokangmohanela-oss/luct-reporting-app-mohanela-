@@ -1,8 +1,28 @@
 {
-  "name": "luct-reporting-app", 
+  "name": "luct-reporting-app",
   "version": "1.0.0",
+  "description": "Full-stack reporting web app built with React and Node.js.",
+  "main": "index.js",
   "scripts": {
-    "build": "npm --prefix ./client install && npm --prefix ./client run build",
-    "start": "npm --prefix ./backend start"
-  }
+    "build": "npm --prefix ./frontend install && npm --prefix ./frontend run build",
+    "start": "cd backend && npm start",
+    "install-deps": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "reporting",
+    "luct",
+    "fullstack",
+    "nodejs",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bokangmohanela-oss/luct-reporting-app.git"
+  },
+  "author": "Bokang Mohanela",
+  "license": "ISC"
 }
